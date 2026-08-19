@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Ediely Nunes",
+        "image": "edielynunes",
+        "password": 567
+    },
+    {
+        "id": 2,
+        "name": "Igor Morais",
+        "image": "igormorais",
+        "password": 845
+    },
+    {
+        "id": 3,
+        "name": "Rodrigo Freitas",
+        "image": "rodrigofreitas",
+        "password": 974
+    },
+    {
+        "id": 4,
+        "name": "Thomas William",
+        "image": "thomaswilliam",
+        "password": 621
+    }
+]

@@ -1,0 +1,17 @@
+import employees_component from "../helpers/employees_component.js";
+
+const cards_slider = document.querySelector('.cards-main-slider');
+
+function display_employees_cards (employees) {
+    if(!employees) return;
+    cards_slider.innerHTML = '';
+    const employees_len = employees.length;
+    for(let i = 0; i < employees_len; i++) {
+        const current = employees[i];
+        const { name, image } = current;
+        cards_slider.innerHTML += employees_component(name, image);
+    }
+
+}
+
+export default display_employees_cards;
