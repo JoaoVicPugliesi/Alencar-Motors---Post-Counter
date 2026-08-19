@@ -140,7 +140,7 @@ nav section {
     transform: translateY(-100%);
     opacity: 0;
     transition:
-    transform 0.8s ease 0.5s,
+    transform 0.8s ease,
     opacity 0.35s ease;
 }
 
@@ -173,6 +173,7 @@ nav section {
 
 .card-main-confirm-message div {
     text-align: center;
+    user-select: none;
 }
 
 .card-main-confirm-input {
@@ -319,6 +320,10 @@ nav section {
     .home-main h3,
     .cards-main h3 {
         font-size: 1.2rem;
+    }
+
+    .card-main-confirm-message div h3 {
+        font-size: 1rem;
     }
 
     .home-main p, .card-name h3  {
