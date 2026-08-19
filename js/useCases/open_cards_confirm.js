@@ -3,6 +3,7 @@ function open_cards_confirm() {
     console.log(cards);
     cards.forEach((card) => {
         card.addEventListener('click', (e) => {
+            if (e.target.closest('.card-main-confirm')) return;
             console.log('clicked');
             card.classList.add('opened');
         })

@@ -1,11 +1,10 @@
-function close_cards_confirm () {
+function close_cards_confirm() {
     const cards = document.querySelectorAll('.card');
     cards.forEach((card) => {
         card.addEventListener('click', (e) => {
-            if(e.target.closest('.card-main-confirm-close')) {
-                console.log('clicked');
-                card.classList.remove('opened');
-            }
+            if (!e.target.closest('.card-main-confirm-close')) return;
+            console.log('clicked');
+            card.classList.remove('opened');
         })
     })
 }

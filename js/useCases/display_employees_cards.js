@@ -8,8 +8,8 @@ function display_employees_cards (employees) {
     const employees_len = employees.length;
     for(let i = 0; i < employees_len; i++) {
         const current = employees[i];
-        const { name, image } = current;
-        cards_slider.innerHTML += employees_component(name, image);
+        const { id, name, image } = current;
+        cards_slider.innerHTML += employees_component(id, name, image);
     }
 
 }

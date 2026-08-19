@@ -16,6 +16,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 nav section {
@@ -86,6 +87,7 @@ nav section {
     color: var(--btn-color);
     border-bottom: var(--anchors-selected-color) solid 2px;
     font-size: 15px;
+    user-select: none;
 }
 
 #cards {
@@ -126,6 +128,7 @@ nav section {
     border-radius: 0.5rem;
     overflow: hidden;
     scroll-snap-align: start;
+    user-select: none;
 }
 
 .card-main-confirm {
@@ -178,6 +181,10 @@ nav section {
 
 .card-main-confirm-input {
     height: 40%;
+}
+
+.card-counter-number h3 {
+    font-size: 1.3rem;
 }
 
 .card-main-confirm-input input {
