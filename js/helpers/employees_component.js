@@ -1,4 +1,4 @@
-function employees_component(id, name, image) {
+function employees_component(id, name, image, daily_counter) {
     return `
         <div class="card">
             <div class="card-main-confirm">
@@ -14,7 +14,10 @@ function employees_component(id, name, image) {
                     </div>
                 </div>
                 <div class="card-main-confirm-input">
-                    <input type="text" maxlength="255" placeholder="Sua Senha Aqui">
+                    <input type="password" maxlength="255" placeholder="Sua Senha Aqui">
+                    <div class="card-main-confirm-input-visibility-btn">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
                 </div>
                 <div class="card-main-confirm-btn" data-id='${id}'>
                      <button>Confirmar</button>
@@ -27,7 +30,7 @@ function employees_component(id, name, image) {
                 <h3>${name}</h3>
             </div>
             <div class="card-counter">
-                <div class="card-counter-number"><h3>0</h3></div>
+                <div class="card-counter-number"><h3>${daily_counter}</h3></div>
                 <div class="card-counter-add"><i class="fa-solid fa-plus"></i></div>
             </div>
         </div>

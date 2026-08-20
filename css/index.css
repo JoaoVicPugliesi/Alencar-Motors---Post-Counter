@@ -114,6 +114,8 @@ nav section {
     padding: 1rem;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    justify-content: start;
+    align-items: center;
 }
 
 .cards-main-slider::-webkit-scrollbar {
@@ -181,6 +183,16 @@ nav section {
 
 .card-main-confirm-input {
     height: 40%;
+    gap: 1rem;
+}
+
+.card-main-confirm-input-visibility-btn {
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.card-main-confirm-input-visibility-btn.visible {
+    color: var(--background-color);
 }
 
 .card-counter-number h3 {

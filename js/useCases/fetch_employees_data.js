@@ -1,13 +1,14 @@
-async function fetch_employees_data () {
-    const req = await fetch('../data/employees.json', {
-        'method': 'GET',
-        'headers': {
-            'Content-Type': 'application/json'
-        }
-    });
+async function fetch_employees_data(db) {
+    const { data, error } = await db
+        .from('employees')
+        .select('*');
 
-    const res = await req.json();
-    return res;
+    if (error) {
+        console.error('Error fetching employees:', error);
+        return [];
+    }
+
+    return data;
 }
 
 export default fetch_employees_data;
